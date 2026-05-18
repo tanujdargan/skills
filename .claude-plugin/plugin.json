@@ -1,0 +1,19 @@
+{
+  "name": "writing-skills",
+  "version": "1.0.0",
+  "description": "Text humanization and writing transformation skills. Rewrite AI-generated text to read as natural human prose, lower AI-detection scores, and remove robotic patterns.",
+  "author": {
+    "name": "tanujdargan"
+  },
+  "repository": "tanujdargan/skills",
+  "license": "MIT",
+  "keywords": [
+    "writing",
+    "humanize",
+    "text",
+    "ai-detection",
+    "prose",
+    "rewriting"
+  ],
+  "skills": ["./.claude/skills/humanize-text"]
+}

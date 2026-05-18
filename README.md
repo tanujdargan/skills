@@ -1,30 +1,35 @@
-# Skills
+# Writing Skills
 
-Agent skills for AI coding assistants. Each skill is a self-contained reference guide that can be loaded into any agent session.
+Agent skills for text transformation and writing. Installable as a plugin for Claude Code and compatible AI coding assistants.
 
-## Available Skills
-
-### Writing
+## Skills
 
 | Skill | Description |
 |---|---|
-| [humanize-text](writing/humanize-text/SKILL.md) | Rewrite AI-generated text to read as natural human prose |
+| [humanize-text](.claude/skills/humanize-text/SKILL.md) | Rewrite AI-generated text to read as natural human prose |
 
 ## Installation
 
-These skills can be used as a plugin with Claude Code or any compatible agent:
+Add as a marketplace, then install the plugin:
 
 ```bash
-claude --plugin-dir /path/to/skills
+claude plugin marketplace add tanujdargan/skills
+claude plugin install writing-skills
 ```
-
-Or reference individual skill files directly in your agent configuration.
 
 ## Structure
 
 ```
-writing/
-  humanize-text/
-    SKILL.md        # Main skill reference
-    reference.md    # Detailed rules with before/after examples
+.claude-plugin/
+  marketplace.json    # Marketplace manifest
+  plugin.json         # Plugin manifest
+.claude/
+  skills/
+    humanize-text/
+      SKILL.md        # Main skill reference
+      reference.md    # Detailed rules with before/after examples
 ```
+
+## License
+
+MIT
